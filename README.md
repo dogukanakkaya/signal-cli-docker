@@ -19,12 +19,11 @@ Sometimes the Signal server requires a captcha token for registering a new accou
 #### Get your captcha token
 https://signalcaptchas.org/registration/generate.html
 
-Open the developer tools and check the console. You will see something like:
-[IMAGE HERE]
+Open the developer tools and check the console. You will see something captcha token there (**Everything after signalcaptcha:// is the captcha token**)
 
-**Everything after signalcaptcha:// is the captcha token**
+<img width="615" alt="Screen Shot 2022-04-13 at 22 59 10" src="https://user-images.githubusercontent.com/51231605/163271309-01e81980-c01e-49b4-8c10-1bdd98761a5b.png">
 
-#### Register with your token now
+#### Register with your token
 ```
 signal-cli -a {phone} register --captcha {captcha_token}
 ```
