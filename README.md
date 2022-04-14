@@ -1,7 +1,17 @@
 ## Boot Container
 ```
-docker build -t signal_cli .
-docker run --name signal_cli -dit signal_cli 
+docker build -t signal-cli .
+docker run --name signal-cli -dit signal-cli 
+```
+Or pull from Docker Hub (https://hub.docker.com/repository/docker/dogukanakkaya/signal-cli)
+```
+docker pull dogukanakkaya/signal-cli
+docker run --name signal-cli -dit dogukanakkaya/signal-cli
+```
+
+Now enter container bash to run commands
+```
+docker exec -it signal-cli bash
 ```
 
 ## To use it as master device
