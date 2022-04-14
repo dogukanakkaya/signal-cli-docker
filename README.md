@@ -1,8 +1,10 @@
 ## Boot Container
+Clone the repository, build and run
 ```
 docker build -t signal-cli .
 docker run --name signal-cli -dit signal-cli 
 ```
+
 Or pull from Docker Hub (https://hub.docker.com/repository/docker/dogukanakkaya/signal-cli)
 ```
 docker pull dogukanakkaya/signal-cli
