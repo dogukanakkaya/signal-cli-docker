@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y curl wget zip git make protobuf-compile
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
-RUN rustup default nightly
+# rustc version: 1.62.0-nightly
+RUN rustup default nightly-2022-04-12
 
 ARG SIGNAL_CLI_VERSION="0.10.5"
 ARG LIBSIGNAL_VERSION="0.15.0"
